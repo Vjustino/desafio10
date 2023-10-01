@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --cor-site: #5b5959;
+}
+
+html{
+    font-family: 'PT Serif', serif; 
+    background-color: #c3c1c1;
+}
+
+.maxWidth{
+    max-width: 90em;
+}
+
+.header{
+    text-align: center;
+    margin: auto;
+
+}
+
+.header_logo{
+    width: 5.9em;
+    height: 100%;
+    margin: 1em;
+
+}
+.header_nav{
+    background-color: #5b5959; 
+}
+
+ul{
+    margin: 0;
+}
+
+.header_nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .9em;
+}
+
+.header_nav a{
+    color: #efefb0;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header_nav a:hover{
+    background-color: color-mix(in srgb, #5b5959, white 20%) ;
+}
+
+@media screen and (min-width: 48em) {
+    header{
+        display: flex;
+        justify-content: space-between ;
+        align-items: center;
+
+    }
+    header_logo{
+        margin-left: 2em;
+        
+    }
+
+    .header_nav{
+        background-color: initial;
+    }
+
+    .header_nav ul{
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+    .header_nav li{
+        display: inline-block;
+    }
+    .header_nav a{
+        color: #5b5959;
+        border-radius: 5px;
+
+    }
+    .header_nav a:hover{
+        background-color: color-mix(in srgb, #b7b726, white 40%) ; 
+
+    }
+}
+
+.trailer{
+    background-color: #cece41;
+    padding-bottom: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 1.5em;
+}
+
+.trailer div{
+    text-align: center;
+    margin: auto ;
+    width: 80%;
+}
+
+.trailer_title {
+    margin-top: 0;
+    padding: .5em;
+    color: #393737;
+    
+    
+
+}
+
+.trailer_title h1{
+    font-size: 2em;
+    margin-bottom:16px;
+}
+
+.trailer_paragrafo{
+    font-size: 1.3em;
+}
+
+.trailer_botao{
+    display: inline-block;
+    margin-top: 1em;
+    padding: 1em 2em;
+    background-color: #5b5959;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #cece41;
+    text-transform: uppercase;
+
+}
+
+.trailer_botao:hover{
+    background-color: color-mix(in srgb, #5b5959, white 20%) ;;
+}
+
+.trailer_botao2{
+    display: inline-block;
+    margin-top: 1em;
+    padding: 1em 2em;
+    background-color: #5b5959;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #cece41;
+    text-transform: uppercase;
+
+}
+
+.trailer_botao2:hover{
+    background-color: color-mix(in srgb, #5b5959, white 20%) ;
+
+}
+
+@media screen and (min-width:48em){
+    
+     .trailer{
+        background-image: url(img10/particulas-de-brilho-dourado-cintilantes-bela-ilustracao-de-fundo.jpg);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-color: initial;
+    }
+
+    .trailer_title {
+        color: #c3c1c1;
+    }
+    
+    .trailer_paragrafo{
+        margin-bottom: 2em;
+        color: #c3c1c1;
+    }
+
+
+
+    
+}
+
+.main_content{
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    
+
+}
+
+.main_content div{
+    margin: auto;
+    padding: 1em;
+    width: 80%;
+
+}
+
+
+
+.main_content_title{
+    color: #aeae17;
+    background-color: white;
+
+}
+
+.icon_img{
+    width: 5.5em;
+    transition: transform 0.3s;
+}
+
+.icon_img:hover{
+    transform: scale(1.1);
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+
+}
+
+.col{
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+.col-12{
+    width: 100%;
+
+    
+
+}
+
+@media screen and (min-width:48em){
+    .col-6{
+        width: calc(50% - 2rem);
+        
+    }
+}
+
+footer{
+    background-color: #393737;
+    color: #efefb0;
+    padding: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'PT Serif', serif; ;
+}
+
+@media screen and (min-width:48em){
+    .trailer_botao{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:48em){
+    .maxWidth iframe{
+        display: none;
+
+    }
+}
